@@ -1,13 +1,15 @@
 var ans1;
-var counter = 0;
+var ans2;
+var ans3;
+var counter1 = 0;
+var counter2 = 0;
+var counter3 = 0;
 function validate1(){
   var answer = document.getElementById("input").value;
   answer = answer.replace(/ /g,'');
-  //console.log(ans1);
-  //console.log(answer);
   if(answer != ans1){
     document.getElementById("input").className = document.getElementById("input").className.replace(" sucess", ""); // this removes the error class
-    counter++;
+    counter1++;
     if(isNaN(answer)){
       document.getElementById("error").innerHTML="Input must be a number!";
       document.getElementById("error").classList.remove("hidden-message");
@@ -25,10 +27,60 @@ function validate1(){
     document.getElementById("error").classList.remove("hidden-message");
     document.getElementById("input").className = document.getElementById("input").className + " sucess";  // this adds the error class
   }
-  setCookie("test_one_tries", counter);
+  setCookie("test_one_tries", counter1);
 }
 
-function display(){
+function validate2(){
+  var answer = document.getElementById("input").value;
+  answer = answer.replace(/ /g,'');
+  if(answer != ans2){
+    document.getElementById("input").className = document.getElementById("input").className.replace(" sucess", ""); // this removes the error class
+    counter2++;
+    if(isNaN(answer)){
+      document.getElementById("error").innerHTML="Input must be a number!";
+      document.getElementById("error").classList.remove("hidden-message");
+      document.getElementById("input").className = document.getElementById("input").className + " error";
+    }
+    else{
+    document.getElementById("error").innerHTML="Try Again!";
+    document.getElementById("error").classList.remove("hidden-message");
+    document.getElementById("input").className = document.getElementById("input").className + " error";  // this adds the error class
+  }
+  }
+  else{
+    document.getElementById("input").className = document.getElementById("input").className.replace(" error", ""); // this removes the error class
+    document.getElementById("error").innerHTML="Correct!";
+    document.getElementById("error").classList.remove("hidden-message");
+    document.getElementById("input").className = document.getElementById("input").className + " sucess";  // this adds the error class
+  }
+  setCookie("test_two_tries", counter2);
+}
+function validate3(){
+  var answer = document.getElementById("input").value;
+  answer = answer.replace(/ /g,'');
+  if(answer != ans3){
+    document.getElementById("input").className = document.getElementById("input").className.replace(" sucess", ""); // this removes the error class
+    counter3++;
+    if(isNaN(answer)){
+      document.getElementById("error").innerHTML="Input must be a number!";
+      document.getElementById("error").classList.remove("hidden-message");
+      document.getElementById("input").className = document.getElementById("input").className + " error";
+    }
+    else{
+    document.getElementById("error").innerHTML="Try Again!";
+    document.getElementById("error").classList.remove("hidden-message");
+    document.getElementById("input").className = document.getElementById("input").className + " error";  // this adds the error class
+  }
+  }
+  else{
+    document.getElementById("input").className = document.getElementById("input").className.replace(" error", ""); // this removes the error class
+    document.getElementById("error").innerHTML="Correct!";
+    document.getElementById("error").classList.remove("hidden-message");
+    document.getElementById("input").className = document.getElementById("input").className + " sucess";  // this adds the error class
+  }
+  setCookie("test_three_tries", counter3);
+}
+function display1(){
   var display = "";
   var x = "";
   var y = "";
@@ -37,7 +89,7 @@ function display(){
   y = Math.floor((Math.random() * 10) + 1);
   z = Math.floor((Math.random() * 10) + 1);
   for(i = 0; i < 5; i++){
-    display += x + " + "+y + " + "+z + " = " + x+x*y+(y+z)+z+ "<br>";
+    display += x + " + "+y + " + "+z + " = " + x+(x*y)+(y+z)+z+ "<br>";
     x = Math.floor((Math.random() * 10) + 1);
     y = Math.floor((Math.random() * 10) + 1);
     z = Math.floor((Math.random() * 10) + 1);
@@ -47,6 +99,52 @@ function display(){
   ans1 = x + " " + (x*y) + " " + (y+z) + " " + z;
   ans1 = ans1.replace(/ /g,'');
   console.log(ans1)
+}
+function display2(){
+  var display = "";
+  var x = "";
+  var y = "";
+  var z = "";
+  x = Math.floor((Math.random() * 10) + 1);
+  y = Math.floor((Math.random() * 10) + 1);
+  z = Math.floor((Math.random() * 10) + 1);
+  for(i = 0; i < 5; i++){
+    display += x + " + "+y + " + "+z + " = " + y+(y*z)+(x+z)+z+ "<br>";
+    x = Math.floor((Math.random() * 10) + 1);
+    y = Math.floor((Math.random() * 10) + 1);
+    z = Math.floor((Math.random() * 10) + 1);
+  }
+  document.getElementById("demo").innerHTML = display;
+  document.getElementById("cousinIt").innerHTML = x + " + "+y + " + "+z + " = ";
+  ans2 = y + " " + (y*z) + " " + (x+z) + " " + z;
+  ans2 = ans2.replace(/ /g,'');
+  console.log(ans2)
+}
+function display3(){
+  var display = "";
+  var x = "";
+  var y = "";
+  var z = "";
+  x = Math.floor((Math.random() * 10) + 1);
+  y = Math.floor((Math.random() * 10) + 1);
+  z = Math.floor((Math.random() * 10) + 1);
+  for(i = 0; i < 5; i++){
+    display += x + " + "+y + " + "+z + " = " + z+(x*z)+(y+x)+y+ "<br>";
+    x = Math.floor((Math.random() * 10) + 1);
+    y = Math.floor((Math.random() * 10) + 1);
+    z = Math.floor((Math.random() * 10) + 1);
+  }
+  document.getElementById("demo").innerHTML = display;
+  document.getElementById("cousinIt").innerHTML = x + " + "+y + " + "+z + " = ";
+  ans3 = z + " " + (x*z) + " " + (y+x) + " " + y;
+  ans3 = ans3.replace(/ /g,'');
+  console.log(ans3)
+}
+function statistics(){
+  document.getElementById("stats").innerHTML= "It took you " + getCooke("test_one_tries")
+  + " tries on Test One <br>" +"It took you " + getCooke("test_two_tries")
+  + " tries on Test Two <br>" +"It took you " + getCooke("test_three_tries")
+  + " tries on Test Three <br>"
 }
 //author: w3schools; found at: http://www.w3schools.com/js/js_cookies.asp
 function setCookie(cname, cvalue, exdays) {
