@@ -1,11 +1,13 @@
+var ans1;
+var counter = 0;
 function validate1(){
   var answer = document.getElementById("input").value;
-  answer = answer.toUpperCase();
   answer = answer.replace(/ /g,'');
-  console.log(answer);
-  if(answer != 1){
-    console.log("here");
+  //console.log(ans1);
+  //console.log(answer);
+  if(answer != ans1){
     document.getElementById("input").className = document.getElementById("input").className.replace(" sucess", ""); // this removes the error class
+    counter++;
     if(isNaN(answer)){
       document.getElementById("error").innerHTML="Input must be a number!";
       document.getElementById("error").classList.remove("hidden-message");
@@ -23,6 +25,7 @@ function validate1(){
     document.getElementById("error").classList.remove("hidden-message");
     document.getElementById("input").className = document.getElementById("input").className + " sucess";  // this adds the error class
   }
+  setCookie("test_one_tries", counter);
 }
 
 function display(){
@@ -41,8 +44,31 @@ function display(){
   }
   document.getElementById("demo").innerHTML = display;
   document.getElementById("cousinIt").innerHTML = x + " + "+y + " + "+z + " = ";
+  ans1 = x + " " + (x*y) + " " + (y+z) + " " + z;
+  ans1 = ans1.replace(/ /g,'');
+  console.log(ans1)
 }
-
+//author: w3schools; found at: http://www.w3schools.com/js/js_cookies.asp
+function setCookie(cname, cvalue, exdays) {
+    var d = new Date();
+    d.setTime(d.getTime() + (exdays*24*60*60*1000));
+    var expires = "expires="+ d.toUTCString();
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+}
+function getCookie(cname) {
+    var name = cname + "=";
+    var ca = document.cookie.split(';');
+    for(var i = 0; i <ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0)==' ') {
+            c = c.substring(1);
+        }
+        if (c.indexOf(name) == 0) {
+            return c.substring(name.length,c.length);
+        }
+    }
+    return "";
+}
 
 //gradiant background
 var colors = new Array(
