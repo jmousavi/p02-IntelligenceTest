@@ -141,9 +141,9 @@ function display3(){
   console.log(ans3)
 }
 function statistics(){
-  document.getElementById("stats").innerHTML= "It took you " + getCooke("test_one_tries")
-  + " tries on Test One <br>" +"It took you " + getCooke("test_two_tries")
-  + " tries on Test Two <br>" +"It took you " + getCooke("test_three_tries")
+  document.getElementById("stats").innerHTML= "It took you " + getCookie("test_one_tries")
+  + " tries on Test One <br>" +"It took you " + getCookie("test_two_tries")
+  + " tries on Test Two <br>" +"It took you " + getCookie("test_three_tries")
   + " tries on Test Three <br>"
 }
 //author: w3schools; found at: http://www.w3schools.com/js/js_cookies.asp
