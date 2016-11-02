@@ -1,4 +1,4 @@
-function validate(){
+function validate1(){
   var answer = document.getElementById("input").value;
   answer = answer.toUpperCase();
   answer = answer.replace(/ /g,'');
@@ -25,8 +25,23 @@ function validate(){
   }
 }
 
-
-
+function display(){
+  var display = "";
+  var x = "";
+  var y = "";
+  var z = "";
+  x = Math.floor((Math.random() * 10) + 1);
+  y = Math.floor((Math.random() * 10) + 1);
+  z = Math.floor((Math.random() * 10) + 1);
+  for(i = 0; i < 5; i++){
+    display += x + " + "+y + " + "+z + " = " + x+x*y+(y+z)+z+ "<br>";
+    x = Math.floor((Math.random() * 10) + 1);
+    y = Math.floor((Math.random() * 10) + 1);
+    z = Math.floor((Math.random() * 10) + 1);
+  }
+  document.getElementById("demo").innerHTML = display;
+  document.getElementById("cousinIt").innerHTML = x + " + "+y + " + "+z + " = ";
+}
 
 
 //gradiant background
