@@ -3,12 +3,19 @@ function validate(){
   answer = answer.toUpperCase();
   answer = answer.replace(/ /g,'');
   console.log(answer);
-  if(answer != "C"){
+  if(answer != 1){
     console.log("here");
     document.getElementById("input").className = document.getElementById("input").className.replace(" sucess", ""); // this removes the error class
+    if(isNaN(answer)){
+      document.getElementById("error").innerHTML="Input must be a number!";
+      document.getElementById("error").classList.remove("hidden-message");
+      document.getElementById("input").className = document.getElementById("input").className + " error";
+    }
+    else{
     document.getElementById("error").innerHTML="Try Again!";
     document.getElementById("error").classList.remove("hidden-message");
     document.getElementById("input").className = document.getElementById("input").className + " error";  // this adds the error class
+  }
   }
   else{
     document.getElementById("input").className = document.getElementById("input").className.replace(" error", ""); // this removes the error class
