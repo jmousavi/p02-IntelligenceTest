@@ -417,6 +417,7 @@ function statistics(){
   var tries1 = Number(tries1a+tries1b+tries1c);
   var tries2 = Number(tries2a+tries2b+tries2c);
   var tries3 = Number(tries3a+tries3b+tries3c);
+  console.log(correct1);
   var display1, display2, display3= "";
 if(correct1==3){
   display1 = "You took " + tries1 + " tries to score 3/3";
