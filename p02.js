@@ -35,7 +35,7 @@ else{
   document.getElementById("input1").className = document.getElementById("input1").className + " sucess";  // this adds the error class
 setCookie("test_oneA_correct", 1);
 }
-if(counter1a==0){
+if(counter1a=="undefined"){
   setCookie("test_oneA_tries", 0);
 }
   setCookie("test_oneA_tries", counter1a);
@@ -66,6 +66,9 @@ else{
   document.getElementById("input2").className = document.getElementById("input2").className + " sucess";  // this adds the error class
 setCookie("test_oneB_correct", 1);
 }
+if(counter1b=="undefined"){
+  setCookie("test_oneB_tries", 0);
+}
 
   setCookie("test_oneB_tries", counter1b);
 }
@@ -93,6 +96,10 @@ else{
   document.getElementById("error3").innerHTML="Correct!";
   document.getElementById("error3").classList.remove("hidden-message");
   document.getElementById("input3").className = document.getElementById("input3").className + " sucess";  // this adds the error class
+  if(counter1c=="undefined"){
+    setCookie("test_oneC_tries", 0);
+  }
+
 setCookie("test_oneC_correct", 1);
 }
 if(counter1)
