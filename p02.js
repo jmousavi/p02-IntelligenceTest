@@ -74,6 +74,7 @@ function validate1c(){
   var answer1c = document.getElementById("input3").value;
   answer1c = answer1c.replace(/ /g,'');
   counter1c = 0;
+  console.log(counter1c);
   setCookie("test_oneC_tries", 0);
   setCookie("test_oneC_correct", 0);
   if(answer1c != ans1c){
@@ -403,7 +404,7 @@ function statistics(){
 
   var correct1a = Number(getCookie("test_oneA_correct"));
   var correct1b = Number(getCookie("test_oneB_correct"));
-  var correct1c = Number(getCookie("test_oneB_correct"));
+  var correct1c = Number(getCookie("test_oneC_correct"));
   var correct2a = Number(getCookie("test_twoA_correct"));
   var correct2b = Number(getCookie("test_twoB_correct"));
   var correct2c = Number(getCookie("test_twoC_correct"));
