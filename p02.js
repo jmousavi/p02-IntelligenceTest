@@ -299,9 +299,6 @@ function display1(){
 	ans1b = ans1b.replace(/ /g,'');
 	ans1c = x + " " + (d*e) + " " + (e+f) + " " + f;
 	ans1c = ans1c.replace(/ /g,'');
-	console.log(ans1a);
-	console.log(ans1b);
-	console.log(ans1c);
 }
 function display2(){
 	var display = "";
@@ -333,9 +330,6 @@ function display2(){
 	ans2b = ans2b.replace(/ /g,'');
 	ans2c = y + " " + (e*f) + " " + (d+f) + " " + f;
 	ans2c = ans2c.replace(/ /g,'');
-	console.log(ans2a);
-	console.log(ans2b);
-	console.log(ans2c);
 }
 function display3(){
 	var display = "";
@@ -367,9 +361,6 @@ function display3(){
 	ans3b = ans3b.replace(/ /g,'');
 	ans3c = z + " " + (d*f) + " " + (e+d) + " " + e;
 	ans3c = ans3c.replace(/ /g,'');
-	console.log(ans3a);
-	console.log(ans3b);
-	console.log(ans3c);
 }
 function statistics(){
 
