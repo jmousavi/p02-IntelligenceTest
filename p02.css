@@ -65,19 +65,11 @@ div.transbox2 p{
   .toprightcorner{
      position:absolute;
      top:20;
-     right:0;
+     right: 0;
      font-size: 40px;
      font-weight: bold;
      font-family: Arial, Helvetica, sans-serif;
     }
-    .bottomleftcorner{
-    position:absolute;
-    bottom: 0;
-    left: 0;
-    font-size: 25px;
-    font-weight: bold;
-      font-family: Arial, Helvetica, sans-serif;
-  }
   a.visited{
     color: GhostWhite;
     text-decoration: none;
@@ -111,5 +103,8 @@ p{
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   color: #008080;
-
+  margin: 0 !important;
+}
+#fonty{
+  font-size: 20px;
 }

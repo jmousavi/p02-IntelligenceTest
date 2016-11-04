@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html lang = "en">
-  <head>
-    <title>Intelligence Test</title>
-      <meta charset="utf-8">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="p02.js"></script>
-     <link rel="stylesheet" href="p02.css">
-  </head>
-  <body>
-    <div id="gradient" />
-    <div class = "background">
-      <div class = "transbox1">
-        <p id = "title">Intelligence Test Three</p>
-      </div>
-    </div>
-    <div class = "topleftcorner">
-      <a href="index.html">
-		     Home
+	<head>
+		<title>Intelligence Test</title>
+		<meta charset="utf-8">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="p02.js"></script>
+		<link rel="stylesheet" href="p02.css">
+	</head>
+	<body onload="display3();">
+		<div id="gradient" />
+			<div class = "background">
+				<div class = "transbox1">
+					<p id = "title"><br>Intelligence Test Three<br><br></p>
+				</div>
+			</div>
+			<div class = "topleftcorner">
+				<a href="index.html">
+					Home
 				</a>
-    </div>
-    <div class = "toprightcorner">
-      <a href="test_2.html">
-		     Back
+			</div>
+			<div class = "toprightcorner">
+				<a href="test_2.html">
+					Back
 				</a>
-    </div>
-    <div class = "background">
-      <div class = "transbox2">
-        <div class = "bottomleftcorner">
-          <a href="#">
-             Sources
-            </a>
-        </div>
-        <p id = "demo">
-          <script>
-          display3();
-          </script>
-        </p>
-        <p>
-            <div class="form-group" id="group">
-              <p id  = "cousinIt">
-        <script> display3();</script>  <input type="text" id="input" class="form-control input-md"
-              placeholder="answer" onchange = "validate3();"><br>
-              <span id="error" class="control-label hidden-message">
-            Error Placeholder (hidden)
-          </span>
-        </p>
-        </div>
-        </p>
-          <a href="statstics.html"><br>Click for Your Statistics</a></p>
-      </div>
-    </div>
- </body>
-</html>
+			</div>
+			<div class = "background">
+				<div class = "transbox2">
+          <p id = "fonty"><br><br>Examples:<br><br></p>
+					<p id = "demo">
+					</p>
+					<p>
+						<br>
+						<span id  = "cousinIt">
+            </span>
+					<input type="text" id="input1" class="form-control input-md"
+								placeholder="answer" onchange = "validate3a();"></br>
+								<span id="error" class="control-label hidden-message">
+									Error Placeholder (hidden)
+								</span>
+</p>
+<p>
+
+								<span id  = "cousin">
+		            </span>
+							<input type="text" id="input2" class="form-control input-md"
+										placeholder="answer" onchange = "validate3b();"><br>
+										<span id="error2" class="control-label hidden-message">
+											Error Placeholder (hidden)
+										</span>
+
+<p>
+										<span id  = "it">
+				            </span>
+									<input type="text" id="input3" class="form-control input-md"
+												placeholder="answer" onchange = "validate3c();"><br>
+												<span id="error3" class="control-label hidden-message">
+													Error Placeholder (hidden)
+												</span>
+
+								<span>
+								<a href="statstics.html"><br>Click for Your Statistics<br><br></a>
+							</span>
+					</p>
+					</div>
+				</div>
+			</div>
+		</body>
+	</html>
