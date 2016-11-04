@@ -1,9 +1,7 @@
 var ans1a, ans1b, ans1c;
 var ans2a, ans2b, ans2c;
 var ans3a, ans3b, ans3c;
-var counter1a;
-var counter1b;
-var counter1c;
+var counter1a, counter1b, counter1c = 0;
 var counter2a, counter2b, counter2c = 0;
 var counter3a, counter3b, counter3c = 0;
 var isCorrect1a, isCorrect1b, isCorrect1c = 0;
@@ -108,6 +106,7 @@ if(counter1)
 function validate2a(){
   var answer2a = document.getElementById("input1").value;
   answer2a = answer2a.replace(/ /g,'');
+  counter2a = 0;
   if(answer2a != ans2a){
     document.getElementById("input1").className = document.getElementById("input1").className.replace(" sucess", ""); // this removes the error class
     counter2a++;
@@ -130,12 +129,16 @@ else{
   document.getElementById("input1").className = document.getElementById("input1").className + " sucess";  // this adds the error class
 setCookie("test_twoA_correct", 1);
 }
+if(counter2a=="undefined"){
+  setCookie("test_twoA_tries", 0);
+}
 
   setCookie("test_twoA_tries", counter2a);
 }
 function validate2b(){
   var answer2b = document.getElementById("input2").value;
   answer2b = answer2b.replace(/ /g,'');
+  counter2b = 0;
   if(answer2b != ans2b){
     document.getElementById("input2").className = document.getElementById("input2").className.replace(" sucess", ""); // this removes the error class
     counter2b++;
@@ -158,12 +161,15 @@ else{
   document.getElementById("input2").className = document.getElementById("input2").className + " sucess";  // this adds the error class
 setCookie("test_twoB_correct", 1);
 }
-
+if(counter2b=="undefined"){
+  setCookie("test_twoB_tries", 0);
+}
   setCookie("test_twoB_tries", counter2b);
 }
 function validate2c(){
   var answer2c = document.getElementById("input3").value;
   answer2c = answer2c.replace(/ /g,'');
+  counter2c = 0;
   if(answer2c != ans2c){
     document.getElementById("input3").className = document.getElementById("input3").className.replace(" sucess", ""); // this removes the error class
     counter2c++;
@@ -186,13 +192,16 @@ else{
   document.getElementById("input3").className = document.getElementById("input3").className + " sucess";  // this adds the error class
   setCookie("test_twoC_correct", 1);
 }
-
+if(counter2c=="undefined"){
+  setCookie("test_twoC_tries", 0);
+}
   setCookie("test_twoC_tries", counter2c);
 }
 
 function validate3a(){
   var answer3a = document.getElementById("input1").value;
   answer3a = answer3a.replace(/ /g,'');
+  counter3a = 0;
   if(answer3a != ans3a){
     document.getElementById("input1").className = document.getElementById("input1").className.replace(" sucess", ""); // this removes the error class
     counter3a++;
@@ -215,12 +224,15 @@ else{
   document.getElementById("input1").className = document.getElementById("input1").className + " sucess";  // this adds the error class
   setCookie("test_threeA_correct", 1);
 }
-
+if(counter3a=="undefined"){
+  setCookie("test_threeA_tries", 0);
+}
   setCookie("test_threA_tries", counter3a);
 }
 function validate3b(){
   var answer3b = document.getElementById("input2").value;
   answer3b = answer3b.replace(/ /g,'');
+  counter3b=0;
   if(answer3b != ans3b){
     document.getElementById("input2").className = document.getElementById("input2").className.replace(" sucess", ""); // this removes the error class
     counter3b++;
@@ -243,12 +255,16 @@ else{
   document.getElementById("input2").className = document.getElementById("input2").className + " sucess";  // this adds the error class
   setCookie("test_threeB_correct", 1);
 }
+if(counter3b=="undefined"){
+  setCookie("test_threeB_tries", 0);
+}
 
   setCookie("test_threeB_tries", counter3b);
 }
 function validate3c(){
   var answer3c = document.getElementById("input3").value;
   answer3c = answer3c.replace(/ /g,'');
+  counter3c=0;
   if(answer3c != ans3c){
     document.getElementById("input3").className = document.getElementById("input3").className.replace(" sucess", ""); // this removes the error class
     counter3c++;
@@ -270,6 +286,9 @@ else{
   document.getElementById("error3").classList.remove("hidden-message");
   document.getElementById("input3").className = document.getElementById("input3").className + " sucess";  // this adds the error class
   setCookie("test_threeC_correct", 1);
+}
+if(counter3a=="undefined"){
+  setCookie("test_threeC_tries", 0);
 }
 
   setCookie("test_threeC_tries", counter3c);
