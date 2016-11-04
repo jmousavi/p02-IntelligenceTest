@@ -37,7 +37,7 @@ setCookie("test_oneA_correct", 1);
 function validate1b(){
   var answer1b = document.getElementById("input2").value;
   answer1b = answer1b.replace(/ /g,'');
-  if(answer2 != ans1b){
+  if(answer1b != ans1b){
     document.getElementById("input2").className = document.getElementById("input2").className.replace(" sucess", ""); // this removes the error class
     counter1b++;
     if(isNaN(answer1b)){
@@ -63,7 +63,7 @@ setCookie("test_oneB_correct", 1);
 }
 function validate1c(){
   var answer1c = document.getElementById("input3").value;
-  answer1c = answer3.replace(/ /g,'');
+  answer1c = answer1c.replace(/ /g,'');
   if(answer1c != ans1c){
     document.getElementById("input3").className = document.getElementById("input3").className.replace(" sucess", ""); // this removes the error class
     counter1c++;
@@ -238,7 +238,7 @@ function validate3c(){
     else{
     document.getElementById("error3").innerHTML="Try Again!";
     document.getElementById("error3").classList.remove("hidden-message");
-    document.getElementById("input3").className = document.getElementById("input1").className + " error";  // this adds the error class
+    document.getElementById("input3").className = document.getElementById("input3").className + " error";  // this adds the error class
   }
 }
 else{
