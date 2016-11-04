@@ -10,7 +10,7 @@ var isCorrect3a, isCorrect3b, isCorrect3c = 0;
 function validate1a(){
   var answer1a = document.getElementById("input1").value;
   answer1a = answer1a.replace(/ /g,'');
-  if(answer1 != ans1a){
+  if(answer1a != ans1a){
     document.getElementById("input1").className = document.getElementById("input1").className.replace(" sucess", ""); // this removes the error class
     counter1a++;
     if(isNaN(answer1a)){
