@@ -31,6 +31,7 @@ else{
   document.getElementById("error").innerHTML="Correct!";
   document.getElementById("error").classList.remove("hidden-message");
   document.getElementById("input1").className = document.getElementById("input1").className + " sucess";  // this adds the error class
+counter1a++;
 setCookie("test_oneA_correct", 1);
 }
 if(counter1a=="undefined"){
@@ -62,6 +63,7 @@ else{
   document.getElementById("error2").innerHTML="Correct!";
   document.getElementById("error2").classList.remove("hidden-message");
   document.getElementById("input2").className = document.getElementById("input2").className + " sucess";  // this adds the error class
+counter1b++;
 setCookie("test_oneB_correct", 1);
 }
 if(counter1b=="undefined"){
@@ -94,13 +96,12 @@ else{
   document.getElementById("error3").innerHTML="Correct!";
   document.getElementById("error3").classList.remove("hidden-message");
   document.getElementById("input3").className = document.getElementById("input3").className + " sucess";  // this adds the error class
-  if(counter1c=="undefined"){
-    setCookie("test_oneC_tries", 0);
-  }
-
+counter1c++;
 setCookie("test_oneC_correct", 1);
 }
-if(counter1)
+if(counter1c=="undefined"){
+  setCookie("test_oneC_tries", 0);
+}
   setCookie("test_oneC_tries", counter1c);
 }
 function validate2a(){
@@ -127,6 +128,7 @@ else{
   document.getElementById("error").innerHTML="Correct!";
   document.getElementById("error").classList.remove("hidden-message");
   document.getElementById("input1").className = document.getElementById("input1").className + " sucess";  // this adds the error class
+counter2a++;
 setCookie("test_twoA_correct", 1);
 }
 if(counter2a=="undefined"){
@@ -159,6 +161,7 @@ else{
   document.getElementById("error2").innerHTML="Correct!";
   document.getElementById("error2").classList.remove("hidden-message");
   document.getElementById("input2").className = document.getElementById("input2").className + " sucess";  // this adds the error class
+counter2b++;
 setCookie("test_twoB_correct", 1);
 }
 if(counter2b=="undefined"){
@@ -190,6 +193,7 @@ else{
   document.getElementById("error3").innerHTML="Correct!";
   document.getElementById("error3").classList.remove("hidden-message");
   document.getElementById("input3").className = document.getElementById("input3").className + " sucess";  // this adds the error class
+counter2c++;
   setCookie("test_twoC_correct", 1);
 }
 if(counter2c=="undefined"){
@@ -222,6 +226,7 @@ else{
   document.getElementById("error").innerHTML="Correct!";
   document.getElementById("error").classList.remove("hidden-message");
   document.getElementById("input1").className = document.getElementById("input1").className + " sucess";  // this adds the error class
+counter3a++;
   setCookie("test_threeA_correct", 1);
 }
 if(counter3a=="undefined"){
@@ -253,6 +258,7 @@ else{
   document.getElementById("error2").innerHTML="Correct!";
   document.getElementById("error2").classList.remove("hidden-message");
   document.getElementById("input2").className = document.getElementById("input2").className + " sucess";  // this adds the error class
+counter3b++;
   setCookie("test_threeB_correct", 1);
 }
 if(counter3b=="undefined"){
@@ -285,10 +291,11 @@ else{
   document.getElementById("error3").innerHTML="Correct!";
   document.getElementById("error3").classList.remove("hidden-message");
   document.getElementById("input3").className = document.getElementById("input3").className + " sucess";  // this adds the error class
+counter3c++;
   setCookie("test_threeC_correct", 1);
 }
 if(counter3a=="undefined"){
-  setCookie("test_threeC_tries", 0);
+  setCookie("test_threeA_tries", 0);
 }
 
   setCookie("test_threeC_tries", counter3c);
