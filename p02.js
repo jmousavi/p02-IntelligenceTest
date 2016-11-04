@@ -29,7 +29,7 @@ else{
   document.getElementById("error").innerHTML="Correct!";
   document.getElementById("error").classList.remove("hidden-message");
   document.getElementById("input1").className = document.getElementById("input1").className + " sucess";  // this adds the error class
-setCooke("test_oneA_correct", 1);
+setCookie("test_oneA_correct", 1);
 }
 
   setCookie("test_oneA_tries", counter1a);
@@ -56,7 +56,7 @@ else{
   document.getElementById("error2").innerHTML="Correct!";
   document.getElementById("error2").classList.remove("hidden-message");
   document.getElementById("input2").className = document.getElementById("input1").className + " sucess";  // this adds the error class
-setCooke("test_oneB_correct", 1);
+setCookie("test_oneB_correct", 1);
 }
 
   setCookie("test_oneB_tries", counter1b);
@@ -83,7 +83,7 @@ else{
   document.getElementById("error3").innerHTML="Correct!";
   document.getElementById("error3").classList.remove("hidden-message");
   document.getElementById("input3").className = document.getElementById("input3").className + " sucess";  // this adds the error class
-setCooke("test_oneC_correct", 1);
+setCookie("test_oneC_correct", 1);
 }
 
   setCookie("test_oneC_tries", counter1c);
@@ -110,7 +110,7 @@ else{
   document.getElementById("error").innerHTML="Correct!";
   document.getElementById("error").classList.remove("hidden-message");
   document.getElementById("input1").className = document.getElementById("input1").className + " sucess";  // this adds the error class
-setCooke("test_twoA_correct", 1);
+setCookie("test_twoA_correct", 1);
 }
 
   setCookie("test_twoA_tries", counter2a);
@@ -137,7 +137,7 @@ else{
   document.getElementById("error2").innerHTML="Correct!";
   document.getElementById("error2").classList.remove("hidden-message");
   document.getElementById("input2").className = document.getElementById("input1").className + " sucess";  // this adds the error class
-setCooke("test_twoB_correct", 1);
+setCookie("test_twoB_correct", 1);
 }
 
   setCookie("test_twoB_tries", counter2b);
@@ -164,7 +164,7 @@ else{
   document.getElementById("error3").innerHTML="Correct!";
   document.getElementById("error3").classList.remove("hidden-message");
   document.getElementById("input3").className = document.getElementById("input3").className + " sucess";  // this adds the error class
-  setCooke("test_twoC_correct", 1);
+  setCookie("test_twoC_correct", 1);
 }
 
   setCookie("test_twoC_tries", counter2c);
@@ -192,7 +192,7 @@ else{
   document.getElementById("error").innerHTML="Correct!";
   document.getElementById("error").classList.remove("hidden-message");
   document.getElementById("input1").className = document.getElementById("input1").className + " sucess";  // this adds the error class
-  setCooke("test_threeA_correct", 1);
+  setCookie("test_threeA_correct", 1);
 }
 
   setCookie("test_threA_tries", counter3a);
@@ -219,7 +219,7 @@ else{
   document.getElementById("error2").innerHTML="Correct!";
   document.getElementById("error2").classList.remove("hidden-message");
   document.getElementById("input2").className = document.getElementById("input1").className + " sucess";  // this adds the error class
-  setCooke("test_threeB_correct", 1);
+  setCookie("test_threeB_correct", 1);
 }
 
   setCookie("test_threeB_tries", counter3b);
@@ -246,7 +246,7 @@ else{
   document.getElementById("error3").innerHTML="Correct!";
   document.getElementById("error3").classList.remove("hidden-message");
   document.getElementById("input3").className = document.getElementById("input3").className + " sucess";  // this adds the error class
-  setCooke("test_threeC_correct", 1)
+  setCookie("test_threeC_correct", 1)
 }
 
   setCookie("test_threeC_tries", counter3c);
