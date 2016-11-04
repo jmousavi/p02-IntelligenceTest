@@ -1,7 +1,9 @@
 var ans1a, ans1b, ans1c;
 var ans2a, ans2b, ans2c;
 var ans3a, ans3b, ans3c;
-var counter1a, counter1b, counter1c = 0;
+var counter1a=0;
+var counterba=0;
+var counter1c=0;
 var counter2a, counter2b, counter2c = 0;
 var counter3a, counter3b, counter3c = 0;
 var isCorrect1a, isCorrect1b, isCorrect1c = 0;
