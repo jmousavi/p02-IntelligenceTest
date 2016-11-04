@@ -401,15 +401,15 @@ function statistics(){
   var tries3b = Number(getCookie("test_threeB_tries"));
   var tries3c = Number(getCookie("test_threeC_tries"));
 
-  var correct1a = getCookie("test_oneA_correct");
-  var correct1b = getCookie("test_oneB_correct");
-  var correct1c = getCookie("test_oneB_correct");
-  var correct2a = getCookie("test_twoA_correct");
-  var correct2b = getCookie("test_twoB_correct");
-  var correct2c = getCookie("test_twoC_correct");
-  var correct3a = getCookie("test_threeA_correct");
-  var correct3b = getCookie("test_threeB_correct");
-  var correct3c = getCookie("test_threeC_correct");
+  var correct1a = Number(getCookie("test_oneA_correct"));
+  var correct1b = Number(getCookie("test_oneB_correct"));
+  var correct1c = Number(getCookie("test_oneB_correct"));
+  var correct2a = Number(getCookie("test_twoA_correct"));
+  var correct2b = Number(getCookie("test_twoB_correct"));
+  var correct2c = Number(getCookie("test_twoC_correct"));
+  var correct3a = Number(getCookie("test_threeA_correct"));
+  var correct3b = Number(getCookie("test_threeB_correct"));
+  var correct3c = Number(getCookie("test_threeC_correct"));
 
   var correct1 = Number(tries1a+tries1b+tries1c);
   var correct2 = Number(tries2a+tries2b+tries2c);
