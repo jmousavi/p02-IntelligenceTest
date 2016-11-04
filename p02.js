@@ -1,9 +1,9 @@
 var ans1a, ans1b, ans1c;
 var ans2a, ans2b, ans2c;
 var ans3a, ans3b, ans3c;
-var counter1a=0;
-var counterba=0;
-var counter1c=0;
+var counter1a;
+var counterba;
+var counter1c;
 var counter2a, counter2b, counter2c = 0;
 var counter3a, counter3b, counter3c = 0;
 var isCorrect1a, isCorrect1b, isCorrect1c = 0;
@@ -12,6 +12,7 @@ var isCorrect3a, isCorrect3b, isCorrect3c = 0;
 function validate1a(){
   var answer1a = document.getElementById("input1").value;
   answer1a = answer1a.replace(/ /g,'');
+  counter1a = 0;
   if(answer1a != ans1a){
     document.getElementById("input1").className = document.getElementById("input1").className.replace(" sucess", ""); // this removes the error class
     counter1a++;
@@ -40,6 +41,7 @@ setCookie("test_oneA_correct", 1);
 function validate1b(){
   var answer1b = document.getElementById("input2").value;
   answer1b = answer1b.replace(/ /g,'');
+  counter1b=0;
   if(answer1b != ans1b){
     document.getElementById("input2").className = document.getElementById("input2").className.replace(" sucess", ""); // this removes the error class
     counter1b++;
@@ -68,6 +70,7 @@ setCookie("test_oneB_correct", 1);
 function validate1c(){
   var answer1c = document.getElementById("input3").value;
   answer1c = answer1c.replace(/ /g,'');
+  counter1c = 0;
   if(answer1c != ans1c){
     document.getElementById("input3").className = document.getElementById("input3").className.replace(" sucess", ""); // this removes the error class
     counter1c++;
