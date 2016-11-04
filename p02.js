@@ -52,10 +52,10 @@ function validate1b(){
   }
 }
 else{
-  document.getElementById("input2").className = document.getElementById("input1").className.replace(" error", ""); // this removes the error class
+  document.getElementById("input2").className = document.getElementById("input2").className.replace(" error", ""); // this removes the error class
   document.getElementById("error2").innerHTML="Correct!";
   document.getElementById("error2").classList.remove("hidden-message");
-  document.getElementById("input2").className = document.getElementById("input1").className + " sucess";  // this adds the error class
+  document.getElementById("input2").className = document.getElementById("input2").className + " sucess";  // this adds the error class
 setCookie("test_oneB_correct", 1);
 }
 
@@ -75,7 +75,7 @@ function validate1c(){
     else{
     document.getElementById("error3").innerHTML="Try Again!";
     document.getElementById("error3").classList.remove("hidden-message");
-    document.getElementById("input3").className = document.getElementById("input1").className + " error";  // this adds the error class
+    document.getElementById("input3").className = document.getElementById("input3").className + " error";  // this adds the error class
   }
 }
 else{
@@ -133,10 +133,10 @@ function validate2b(){
   }
 }
 else{
-  document.getElementById("input2").className = document.getElementById("input1").className.replace(" error", ""); // this removes the error class
+  document.getElementById("input2").className = document.getElementById("input2").className.replace(" error", ""); // this removes the error class
   document.getElementById("error2").innerHTML="Correct!";
   document.getElementById("error2").classList.remove("hidden-message");
-  document.getElementById("input2").className = document.getElementById("input1").className + " sucess";  // this adds the error class
+  document.getElementById("input2").className = document.getElementById("input2").className + " sucess";  // this adds the error class
 setCookie("test_twoB_correct", 1);
 }
 
@@ -156,7 +156,7 @@ function validate2c(){
     else{
     document.getElementById("error3").innerHTML="Try Again!";
     document.getElementById("error3").classList.remove("hidden-message");
-    document.getElementById("input3").className = document.getElementById("input1").className + " error";  // this adds the error class
+    document.getElementById("input3").className = document.getElementById("input3").className + " error";  // this adds the error class
   }
 }
 else{
@@ -215,10 +215,10 @@ function validate3b(){
   }
 }
 else{
-  document.getElementById("input2").className = document.getElementById("input1").className.replace(" error", ""); // this removes the error class
+  document.getElementById("input2").className = document.getElementById("input2").className.replace(" error", ""); // this removes the error class
   document.getElementById("error2").innerHTML="Correct!";
   document.getElementById("error2").classList.remove("hidden-message");
-  document.getElementById("input2").className = document.getElementById("input1").className + " sucess";  // this adds the error class
+  document.getElementById("input2").className = document.getElementById("input2").className + " sucess";  // this adds the error class
   setCookie("test_threeB_correct", 1);
 }
 
