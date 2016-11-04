@@ -365,14 +365,14 @@ function display3(){
 }
 function statistics(){
   var tries1a = Number(getCookie("test_oneA_tries"));
-  var tries1b = getCookie("test_oneB_tries");
-  var tries1c = getCookie("test_oneC_tries");
-  var tries2a = getCookie("test_twoA_tries");
-  var tries2b = getCookie("test_twoB_tries");
-  var tries2c = getCookie("test_twoC_tries");
-  var tries3a = getCookie("test_threeA_tries");
-  var tries3b = getCookie("test_threeB_tries");
-  var tries3c = getCookie("test_threeC_tries");
+  var tries1b = Number(getCookie("test_oneB_tries"));
+  var tries1c = Number(getCookie("test_oneC_tries"));
+  var tries2a = Number(getCookie("test_twoA_tries"));
+  var tries2b = Number(getCookie("test_twoB_tries"));
+  var tries2c = Number(getCookie("test_twoC_tries"));
+  var tries3a = Number(getCookie("test_threeA_tries"));
+  var tries3b = Number(getCookie("test_threeB_tries"));
+  var tries3c = Number(getCookie("test_threeC_tries"));
 
   var correct1a = getCookie("test_oneA_correct");
   var correct1b = getCookie("test_oneB_correct");
