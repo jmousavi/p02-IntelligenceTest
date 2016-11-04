@@ -296,9 +296,9 @@ function display1(){
 	document.getElementById("it").innerHTML = d + " + "+e + " + "+f + " = ";
 	ans1a = x + " " + (x*y) + " " + (y+z) + " " + z;
 	ans1a = ans1a.replace(/ /g,'');
-	ans1b = x + " " + (a*b) + " " + (b+c) + " " + c;
+	ans1b = a + " " + (a*b) + " " + (b+c) + " " + c;
 	ans1b = ans1b.replace(/ /g,'');
-	ans1c = x + " " + (d*e) + " " + (e+f) + " " + f;
+	ans1c = d + " " + (d*e) + " " + (e+f) + " " + f;
 	ans1c = ans1c.replace(/ /g,'');
 }
 function display2(){
@@ -327,9 +327,9 @@ function display2(){
 	document.getElementById("it").innerHTML = d + " + "+e + " + "+f + " = ";
 	ans2a = y + " " + (y*z) + " " + (x+z) + " " + z;
 	ans2a = ans2a.replace(/ /g,'');
-	ans2b = y + " " + (b*c) + " " + (a+c) + " " + c;
+	ans2b = b + " " + (b*c) + " " + (a+c) + " " + c;
 	ans2b = ans2b.replace(/ /g,'');
-	ans2c = y + " " + (e*f) + " " + (d+f) + " " + f;
+	ans2c = e + " " + (e*f) + " " + (d+f) + " " + f;
 	ans2c = ans2c.replace(/ /g,'');
 }
 function display3(){
@@ -358,9 +358,9 @@ function display3(){
 	document.getElementById("it").innerHTML = d + " + "+e + " + "+f + " = ";
 	ans3a = z + " " + (x*z) + " " + (y+x) + " " + y;
 	ans3a = ans3a.replace(/ /g,'');
-	ans3b = a + " " + (a*c) + " " + (b+a) + " " + b;
+	ans3b = c + " " + (a*c) + " " + (b+a) + " " + b;
 	ans3b = ans3b.replace(/ /g,'');
-	ans3c = z + " " + (d*f) + " " + (e+d) + " " + e;
+	ans3c = f + " " + (d*f) + " " + (e+d) + " " + e;
 	ans3c = ans3c.replace(/ /g,'');
 }
 function statistics(){
