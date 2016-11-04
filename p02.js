@@ -1,3 +1,4 @@
+//Author: Jasmin Mousavi; Project 2: Intelligence Test
 var ans1a, ans1b, ans1c;
 var ans2a, ans2b, ans2c;
 var ans3a, ans3b, ans3c;
