@@ -35,8 +35,10 @@ else{
 counter1a++;
 setCookie("test_oneA_correct", 1);
 }
-
-  setCookie("test_oneA_tries", counter1a);
+  var x = Number(setCookie("test_oneA_tries", counter1a));
+  console.log(x);
+  x++;
+  setCookie("test_oneA_tries", x);
 }
 function validate1b(){
   var answer1b = document.getElementById("input2").value;
