@@ -10,6 +10,7 @@ var isCorrect3a, isCorrect3b, isCorrect3c = 0;
 function validate1a(){
   var answer1a = document.getElementById("input1").value;
   answer1a = answer1a.replace(/ /g,'');
+  counter1a = 0;
   setCookie("test_oneA_tries", 0);
   setCookie("test_oneA_correct", 0);
   if(answer1a != ans1a){
@@ -40,6 +41,7 @@ setCookie("test_oneA_correct", 1);
 function validate1b(){
   var answer1b = document.getElementById("input2").value;
   answer1b = answer1b.replace(/ /g,'');
+  counter1b=0;
   setCookie("test_oneB_tries", 0);
   setCookie("test_oneB_correct", 0);
   if(answer1b != ans1b){
@@ -71,7 +73,7 @@ setCookie("test_oneB_correct", 1);
 function validate1c(){
   var answer1c = document.getElementById("input3").value;
   answer1c = answer1c.replace(/ /g,'');
-  console.log(counter1c);
+  counter1c = 0;
   setCookie("test_oneC_tries", 0);
   setCookie("test_oneC_correct", 0);
   if(answer1c != ans1c){
@@ -102,6 +104,7 @@ setCookie("test_oneC_correct", 1);
 function validate2a(){
   var answer2a = document.getElementById("input1").value;
   answer2a = answer2a.replace(/ /g,'');
+  counter2a = 0;
   setCookie("test_twoA_tries", 0);
   setCookie("test_twoA_correct", 0);
   if(answer2a != ans2a){
@@ -133,6 +136,7 @@ setCookie("test_twoA_correct", 1);
 function validate2b(){
   var answer2b = document.getElementById("input2").value;
   answer2b = answer2b.replace(/ /g,'');
+  counter2b = 0;
   setCookie("test_twoB_tries", 0);
   if(answer2b != ans2b){
     document.getElementById("input2").className = document.getElementById("input2").className.replace(" sucess", ""); // this removes the error class
@@ -162,6 +166,7 @@ setCookie("test_twoB_correct", 1);
 function validate2c(){
   var answer2c = document.getElementById("input3").value;
   answer2c = answer2c.replace(/ /g,'');
+  counter2c = 0;
   setCookie("test_twoC_tries", 0);
   setCookie("test_twoC_correct", 0);
   if(answer2c != ans2c){
@@ -193,6 +198,7 @@ counter2c++;
 function validate3a(){
   var answer3a = document.getElementById("input1").value;
   answer3a = answer3a.replace(/ /g,'');
+  counter3a = 0;
   setCookie("test_threeA_tries", 0);
   setCookie("test_threeA_correct", 0);
   if(answer3a != ans3a){
@@ -224,6 +230,7 @@ function validate3b(){
   answer3b = answer3b.replace(/ /g,'');
   setCookie("test_threeB_tries", 0);
   setCookie("test_threeB_correct", 0);
+  counter3b=0;
   if(answer3b != ans3b){
     document.getElementById("input2").className = document.getElementById("input2").className.replace(" sucess", ""); // this removes the error class
     counter3b++;
@@ -252,6 +259,7 @@ counter3b++;
 function validate3c(){
   var answer3c = document.getElementById("input3").value;
   answer3c = answer3c.replace(/ /g,'');
+  counter3c=0;
   setCookie("test_threeC_correct", 0);
   setCookie("test_threeC_tries", 0);
   if(answer3c != ans3c){
