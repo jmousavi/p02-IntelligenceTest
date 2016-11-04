@@ -13,6 +13,7 @@ function validate1a(){
   if(answer1a != ans1a){
     document.getElementById("input1").className = document.getElementById("input1").className.replace(" sucess", ""); // this removes the error class
     counter1a++;
+    setCookie("test_oneA_correct", 0);
     if(isNaN(answer1a)){
       document.getElementById("error").innerHTML="Input must be a number!";
       document.getElementById("error").classList.remove("hidden-message");
@@ -40,6 +41,7 @@ function validate1b(){
   if(answer1b != ans1b){
     document.getElementById("input2").className = document.getElementById("input2").className.replace(" sucess", ""); // this removes the error class
     counter1b++;
+    setCookie("test_oneB_correct", 0);
     if(isNaN(answer1b)){
       document.getElementById("error2").innerHTML="Input must be a number!";
       document.getElementById("error2").classList.remove("hidden-message");
@@ -67,6 +69,7 @@ function validate1c(){
   if(answer1c != ans1c){
     document.getElementById("input3").className = document.getElementById("input3").className.replace(" sucess", ""); // this removes the error class
     counter1c++;
+    setCookie("test_oneC_correct", 0);
     if(isNaN(answer1c)){
       document.getElementById("error3").innerHTML="Input must be a number!";
       document.getElementById("error3").classList.remove("hidden-message");
@@ -94,6 +97,7 @@ function validate2a(){
   if(answer2a != ans2a){
     document.getElementById("input1").className = document.getElementById("input1").className.replace(" sucess", ""); // this removes the error class
     counter2a++;
+    setCookie("test_twoA_correct", 0);
     if(isNaN(answer2a)){
       document.getElementById("error").innerHTML="Input must be a number!";
       document.getElementById("error").classList.remove("hidden-message");
@@ -121,6 +125,7 @@ function validate2b(){
   if(answer2b != ans2b){
     document.getElementById("input2").className = document.getElementById("input2").className.replace(" sucess", ""); // this removes the error class
     counter2b++;
+    setCookie("test_twoB_correct", 0);
     if(isNaN(answer2b)){
       document.getElementById("error2").innerHTML="Input must be a number!";
       document.getElementById("error2").classList.remove("hidden-message");
@@ -148,6 +153,7 @@ function validate2c(){
   if(answer2c != ans2c){
     document.getElementById("input3").className = document.getElementById("input3").className.replace(" sucess", ""); // this removes the error class
     counter2c++;
+    setCookie("test_twoC_correct", 0);
     if(isNaN(answer2c)){
       document.getElementById("error3").innerHTML="Input must be a number!";
       document.getElementById("error3").classList.remove("hidden-message");
@@ -176,6 +182,7 @@ function validate3a(){
   if(answer3a != ans3a){
     document.getElementById("input1").className = document.getElementById("input1").className.replace(" sucess", ""); // this removes the error class
     counter3a++;
+    setCookie("test_threeA_correct", 0);
     if(isNaN(answer3a)){
       document.getElementById("error").innerHTML="Input must be a number!";
       document.getElementById("error").classList.remove("hidden-message");
@@ -203,6 +210,7 @@ function validate3b(){
   if(answer3b != ans3b){
     document.getElementById("input2").className = document.getElementById("input2").className.replace(" sucess", ""); // this removes the error class
     counter3b++;
+    setCookie("test_threeB_correct", 0);
     if(isNaN(answer3b)){
       document.getElementById("error2").innerHTML="Input must be a number!";
       document.getElementById("error2").classList.remove("hidden-message");
@@ -230,6 +238,7 @@ function validate3c(){
   if(answer3c != ans3c){
     document.getElementById("input3").className = document.getElementById("input3").className.replace(" sucess", ""); // this removes the error class
     counter3c++;
+    setCookie("test_threeC_correct", 0);
     if(isNaN(answer3c)){
       document.getElementById("error3").innerHTML="Input must be a number!";
       document.getElementById("error3").classList.remove("hidden-message");
@@ -246,7 +255,7 @@ else{
   document.getElementById("error3").innerHTML="Correct!";
   document.getElementById("error3").classList.remove("hidden-message");
   document.getElementById("input3").className = document.getElementById("input3").className + " sucess";  // this adds the error class
-  setCookie("test_threeC_correct", 1)
+  setCookie("test_threeC_correct", 1);
 }
 
   setCookie("test_threeC_tries", counter3c);
@@ -355,7 +364,7 @@ function display3(){
   console.log(ans3c);
 }
 function statistics(){
-  var tries1a = getCookie("test_oneA_tries");
+  var tries1a = Number(getCookie("test_oneA_tries"));
   var tries1b = getCookie("test_oneB_tries");
   var tries1c = getCookie("test_oneC_tries");
   var tries2a = getCookie("test_twoA_tries");
