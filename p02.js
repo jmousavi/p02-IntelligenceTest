@@ -2,7 +2,7 @@ var ans1a, ans1b, ans1c;
 var ans2a, ans2b, ans2c;
 var ans3a, ans3b, ans3c;
 var counter1a;
-var counterba;
+var counter1b;
 var counter1c;
 var counter2a, counter2b, counter2c = 0;
 var counter3a, counter3b, counter3c = 0;
@@ -35,7 +35,9 @@ else{
   document.getElementById("input1").className = document.getElementById("input1").className + " sucess";  // this adds the error class
 setCookie("test_oneA_correct", 1);
 }
-
+if(counter1a==0){
+  setCookie("test_oneA_tries", 0);
+}
   setCookie("test_oneA_tries", counter1a);
 }
 function validate1b(){
@@ -93,7 +95,7 @@ else{
   document.getElementById("input3").className = document.getElementById("input3").className + " sucess";  // this adds the error class
 setCookie("test_oneC_correct", 1);
 }
-
+if(counter1)
   setCookie("test_oneC_tries", counter1c);
 }
 function validate2a(){
