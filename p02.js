@@ -411,85 +411,54 @@ function statistics(){
   var correct3b = Number(getCookie("test_threeB_correct"));
   var correct3c = Number(getCookie("test_threeC_correct"));
 
-  var correct1 = Number(tries1a+tries1b+tries1c);
-  var correct2 = Number(tries2a+tries2b+tries2c);
-  var correct3 = Number(tries3a+tries3b+tries3c);
+  var correct1 = Number(correct1a+correct1b+correct1c);
+  var correct2 = Number(correct2a+correct2b+correct2c);
+  var correct3 = Number(correct3a+correct3b+correct3c);
+  var tries1 = Number(tries1a+tries1b+tries1c);
+  var tries2 = Number(tries2a+tries2b+tries2c);
+  var tries3 = Number(tries3a+tries3b+tries3c);
   var display1, display2, display3= "";
-
-if(correct1a==1 && correct1b==1 && correct1b==1){
-  display1 = "It took you " + correct1 + " tries to score 3/3."
+if(correct1==3){
+  display1 = "You took " + tries1 + " tries to score 3/3";
 }
-else if(correct1a==1 && correct1b==1 && correct1c!=1){
-  display1 = "It took you " + correct1 + " tries to score 2/3."
+else if(correct1==2){
+  display1 = "You took " + tries1 + " tries to score 2/3";
 }
-else if(correct1a==1 && correct1b!=1 && correct1c==1){
-  display1 = "It took you " + correct1 + " tries to score 2/3."
+else if(correct1==1){
+  display1 = "You took " + tries1 + " tries to score 1/3";
 }
-else if(correct1a!=1 && correct1b==1 && correct1c==1){
-  display1 = "It took you " + correct1 + " tries to score 2/3."
-}
-else if(correct1a==1 && correct1b!=1 && correct1c!=1){
-  display1 = "It took you " + correct1 + " tries to score 1/3."
-}
-else if(correct1a!=1 && correct1b==1 && correct1c!=1){
-  display1 = "It took you " + correct1 + " tries to score 1/3."
-}
-else if(correct1a!=1 && correct1b!=1 && correct1c==1){
-  display1 = "It took you " + correct1 + " tries to score 1/3."
-}
-else{
-  display1 = "It took you " + correct1 + " tries to score 0/3."
+else if(correct1==0){
+  display1 = "You took " + tries1 + " tries to score 0/3";
 }
 
-if(correct2a==1 && correct2b==1 && correct2b==1){
-  display2 = "It took you " + correct2 + " tries to score 3/3."
+
+if(correct2==3){
+  display2 = "You took " + tries2 + " tries to score 3/3";
 }
-else if(correct2a==1 && correct2b==1 && correct2c!=1){
-  display2 = "It took you " + correct2 + " tries to score 2/3."
+else if(correct2==2){
+display2 = "You took " + tries2 + " tries to score 2/3";
 }
-else if(correct2a==1 && correct2b!=1 && correct2c==1){
-  display2 = "It took you " + correct2 + " tries to score 2/3."
+else if(correct2==1){
+display2 = "You took " + tries2 + " tries to score 1/3";
 }
-else if(correct2a!=1 && correct2b==1 && correct2c==1){
-  display2 = "It took you " + correct2 + " tries to score 2/3."
-}
-else if(correct2a==1 && correct2b!=1 && correct2c!=1){
-  display2 = "It took you " + correct2 + " tries to score 1/3."
-}
-else if(correct2a!=1 && correct2b==1 && correct2c!=1){
-  display2 = "It took you " + correct2 + " tries to score 1/3."
-}
-else if(correct2a!=1 && correct2b!=1 && correct2c==1){
-  display2 = "It took you " + correct2 + " tries to score 1/3."
-}
-else{
-  display2 = "It took you " + correct2 + " tries to score 0/3."
+else if(correct2==0){
+display2 = "You took " + tries2 + " tries to score 0/3";
 }
 
-if(correct3a==1 && correct3b==1 && correct3b==1){
-  display3 = "It took you " + correct3 + " tries to score 3/3."
+
+if(correct3==3){
+display3 = "You took " + tries3 + " tries to score 3/3";
 }
-else if(correct3a==1 && correct3b==1 && correct3c!=1){
-  display3 = "It took you " + correct3 + " tries to score 2/3."
+else if(correct3==2){
+display3 = "You took " + tries3 + " tries to score 2/3";
 }
-else if(correct3a==1 && correct3b!=1 && correct3c==1){
-  display3 = "It took you " + correct3 + " tries to score 2/3."
+else if(correct2==1){
+display3 = "You took " + tries3 + " tries to score 1/3";
 }
-else if(correct3a!=1 && correct3b==1 && correct3c==1){
-  display3 = "It took you " + correct3 + " tries to score 2/3."
+else if(correct2==0){
+display3 = "You took " + tries3 + " tries to score 0/3";
 }
-else if(correct3a==1 && correct3b!=1 && correct3c!=1){
-  display3 = "It took you " + correct3 + " tries to score 1/3."
-}
-else if(correct3a!=1 && correct3b==1 && correct3c!=1){
-  display3 = "It took you " + correct3 + " tries to score 1/3."
-}
-else if(correct3a!=1 && correct3b!=1 && correct3c==1){
-  display3 = "It took you " + correct3 + " tries to score 1/3."
-}
-else{
-  display3 = "It took you " + correct3 + " tries to score 0/3."
-}
+
 document.getElementById("test1").innerHTML= "<br>" + display1 + "<br><br>";
 document.getElementById("test2").innerHTML= display2 + "<br><br>";
 document.getElementById("test3").innerHTML= display3 + "<br><br>";
